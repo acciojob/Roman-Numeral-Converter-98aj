@@ -10,14 +10,14 @@ function convertToRoman(num) {
     };
 
   //your code here
-let result = '';
-  
-  for (key in obj) {
-    result += key.repeat(Math.floor(num / obj[key]));
-    num %= obj[key];
+let roman = '',i;
+  for ( i in obj ) {
+    while ( num >= obj[i] ) {
+      roman += i;
+      num -= obj[i];
+    }
   }
-  
-  return result;
+  return roman;
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
