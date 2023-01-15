@@ -11,10 +11,10 @@ function convertToRoman(num) {
 
   //your code here
 roman = '',i;
-  for ( i in lookup ) {
-    while ( num >= lookup[i] ) {
+  for ( i in obj ) {
+    while ( num >= obj[i] ) {
       roman += i;
-      num -= lookup[i];
+      num -= obj[i];
     }
   }
   return roman;
