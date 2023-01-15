@@ -12,9 +12,9 @@ function convertToRoman(num) {
   //your code here
 let result = '';
   
-  for (key in map) {
-    result += key.repeat(Math.floor(num / map[key]));
-    num %= map[key];
+  for (key in obj) {
+    result += key.repeat(Math.floor(num / obj[key]));
+    num %= obj[key];
   }
   
   return result;
