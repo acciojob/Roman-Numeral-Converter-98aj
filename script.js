@@ -10,7 +10,7 @@ function convertToRoman(num) {
     };
 
   //your code here
-var roman = 0,i;
+var roman = '',i;
   for ( i in obj ) {
     while ( num >= obj[i] ) {
       roman += i;
